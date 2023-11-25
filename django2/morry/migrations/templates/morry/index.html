@@ -1,0 +1,12 @@
+{% load static%}
+{% extends 'morry/base.html' %}
+
+
+{% block content%}
+    <div class="img">
+        <img src="{% static 'morry/static/img/T44-100.jpg' %}">
+    </div>
+    {% fro item in menu %}
+        <h1>{{item.title}}</h1>
+    {% endfor %}
+{% endblock %}
